@@ -1,5 +1,10 @@
+:root {
+    --onecolor : #0A3871;
+    --secondcolor : #495057;
+}
 body{
     background-color: #f3f5fc;
+    font-family: 'Inter', sans-serif;
 }
 main{
     display: flex;
@@ -22,10 +27,65 @@ header img{
 }
 
 .text-area{
+    background: transparent;
     width: 577px;
     height: 288px;
     border: none;
-    color: #0a3871;    
+    color: var(--onecolor); 
+    font-size: 32px;
+    outline: none;   
     text-transform: lowercase;
 }
-::placeholder { color: #0a3871; }
+::placeholder { color: var(--onecolor); }
+
+.alert{
+    display: flex;
+    align-items: center;    
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: var(--secondcolor);
+    font-size: 12px;
+}
+
+.alert__img{
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+
+
+.btn-encriptar{
+    width: 328px;
+    height: 67px;
+    background-color: var(--onecolor);
+    border-radius: 24px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 24px;
+}
+.btn-desencriptar{
+    width: 328px;
+    height: 67px;
+    background-color: white;
+    border-radius: 24px;
+    border: 1px solid var(--onecolor);
+    color: var(--onecolor);
+    font-size: 16px;
+    font-weight: 600;
+   
+}
+.aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    height: 550px;
+    margin-right: 100px;
+    background-color: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
